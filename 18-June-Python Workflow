@@ -1,0 +1,107 @@
+-------------------
+all()
+mylist = [True, True, True]
+x = all(mylist)
+print(x)
+-------
+pow()
+
+x = pow(4,3)
+print(x)
+----------
+range()
+list(range(10))
+>>> list(range(1, 11))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list(range(0, 30, 5))
+[0, 5, 10, 15, 20, 25]
+>>> list(range(0, 10, 3))
+[0, 3, 6, 9]
+>>> list(range(0, -10, -1))
+[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+>>> list(range(0))
+[]
+>>> list(range(1, 0))
+[]
+-------------
+tuple
+x = tuple(("apple", "banana", "cherry"))
+
+print(x)
+------------
+open()
+
+f = open("demofile.txt", "r")
+print(f.read())
+------------------
+iter ()
+x = iter(["apple", "banana", "cherry"])
+print(next(x))
+print(next(x))
+print(next(x))
+-----------
+map()
+def myfunc(a):
+  return len(a)
+
+x = map(myfunc, ('apple', 'banana', 'cherry'))
+
+print(x)
+
+#convert the map into a list, for readability:
+print(list(x))
+------------------
+ab()
+x = abs(-7.25)
+print(x)
+-------------------
+--------
+-----------
+next()
+mylist = iter(["apple", "banana", "cherry"])
+x = next(mylist)
+print(x)
+x = next(mylist)
+print(x)
+x = next(mylist)
+print(x)
+
+---------------------
+Flow-control1.py
+
+if(name == 'Alice'):
+  Print('Hi, Alice')
+elif (age < 12 ):
+  print('you are not Alice,Kiddo.')
+elif ( age >100): 
+  print('you are not Alice,grannie.')
+elif ( age > 2000) :
+  print('unlike you alice is not....')
+---------------------------------
+Flow -Control2.py
+-----------------
+
+
+name = ''
+name = input("please type your name")
+if (name == name):
+  print('name')
+elif (name!= name):
+  print('Thank you')
+------------------------------
+flow -Control3.py
+---------------------
+name = ''
+name = input("Who are you"?)
+if(name!= 'joe'):
+  continue
+elif(name == 'joe'):
+  password = input('Hello,joe,What is the password?(Its is a fish)')
+if (password == 'swordfish'):
+    break
+print('Access Granted')
+---------------------------------------
+
+
+
+
